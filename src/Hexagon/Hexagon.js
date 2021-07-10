@@ -119,6 +119,11 @@ class Hexagon extends Component {
         onDragOver={e => this.onDragOver(e)}
         onDrop={e => this.onDrop(e)}
       >
+        <defs>
+          <clipPath id={`tile-${this.props.q}-${this.props.r}`}>
+            <polygon points={points} />
+          </clipPath>
+        </defs>
         <g className="hexagon">
           <polygon points={points} fill={fillId} style={cellStyle} />
           {this.props.children}
