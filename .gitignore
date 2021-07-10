@@ -26,10 +26,10 @@ build/Release
 node_modules/
 
 # Babel compiled sources
-lib/
+# lib/
 
 # UMD distribution
-dist/
+# dist/
 
 # Miscellaneous
 *~
